@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app="myapp">
+  <head>
+    <meta charset="utf-8">
+    <title>My HTML File</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+      <link rel="stylesheet" href="style.css" />
+    <script src="bower_components/angular/angular.js"></script>
+      <script src="app.modules/app.module.js"></script>
+      <script src="app.services/calculate.service.js"></script>
+      <script src="app.controllers/app.controller.js"></script>
+  </head>
+  <body>
+
+    <div class="mainContainer" ng-controller="KeyController">
+        <div class="InputBox" >
+        <input type="text" ng-model="output" />
+        </div> 
+        <div class="keypad">
+            <div class="grid">
+                <div class="col-4" ng-repeat="key in keys" >
+                    <div ng-if="$index %4 == 0">
+                        <button ng-if="$index<keys.length" ng-click="press(keys[$index])" >{{keys[$index]}}</button>
+                        <button ng-if="$index+1<keys.length" ng-click="press(keys[$index+1])">{{keys[$index+1]}}</button>
+                        <button ng-if="$index+2<keys.length" ng-click="press(keys[$index+2])">{{keys[$index+2]}}</button>
+                        <button ng-if="$index+3<keys.length" ng-click="press(keys[$index+3])">{{keys[$index+3]}}</button>
+                    </div>
+                    
+                </div>
+            
+            </div>
+        
+        </div>
+      
+    </div>
+
+  </body>
+</html>

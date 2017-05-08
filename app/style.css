@@ -3,21 +3,31 @@ body{
     align-content: center;
 }
 
+.mainContainer{
+    width:auto;
+    
+    position:relative;
+    left:40%;
+    top:200px;
+ font-family : sans-serif;
+}
+
 .InputBox{
-    height:50px;
+    height:80px;
     border-radius:2px;
-    margin-top : 8px;
-    margin-bottom:2px;
-    width:251px;
+    margin-top : 0px;
+    margin-bottom:4px;
+    width:410px;
     
 }
 
 .InputBox input {
-    width:100%;
+    width:410px;
     height:100%;
-    font-size:24px;
+    font-size:3em;
     font-family: sans-serif;
-    padding:0 4px;
+    padding:0 8px;
+    margin-bottom:4px;
     color:#616161;
     outline-color:#BDBDBD;
     
@@ -33,7 +43,9 @@ input:focus{
 
 
 .col-4 button{
-    width:60px;
-    margin:4px 0;
-    hegith:auto;
+    width:100px;
+    margin:4px 0px 0px 0px;
+    height:60px;
+    font-size:2.5em;
+    font-family: sans-serif;
 }

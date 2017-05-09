@@ -6,7 +6,7 @@ Basic Calculator developed by using AngularJS
  
 # Installation Guide
  Step-1 : clone project by using following command <br />
- <code> git clone https://github.com/govindmahecha/angular-calculator </code>
+  ```git clone https://github.com/govindmahecha/angular-calculator ```
  
  Step 2 : go to project directory 
  <code> cd angular-calculator </code>

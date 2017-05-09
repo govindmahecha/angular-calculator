@@ -3,7 +3,7 @@
 angular.module('myapp')
     .controller('KeyController',['$scope','CalculateService',function($scope,CalculateService){
         
-        $scope.keys = [1,2,3,4,5,6,7,8,9,0,'+','-','*','/','=','C'];
+        $scope.keys = [1,2,3,"+",4,5,6,"-",7,8,9,"*","C",0,'=','/'];
         $scope.output = '';
         
         $scope.press = function(key){
